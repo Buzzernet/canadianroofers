@@ -27,7 +27,7 @@ const AboutSection = () => {
           className="relative h-[50vh] lg:h-auto"
         >
           <Image
-            src="/images/about-team.jpg"
+            src="/images/content-image-2.webp"
             alt="Canadian Roofers professional roofing team working on Toronto and GTA residential and commercial projects"
             fill
             className="object-cover"
