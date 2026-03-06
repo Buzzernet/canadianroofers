@@ -69,13 +69,13 @@ const HeroSection = () => {
           <div className="flex items-baseline gap-2">
             <span className="font-bebas-neue text-accent text-[80px] md:text-[120px] leading-none">$4.99</span>
             <div className="flex flex-col">
-              <span className="font-outfit text-primary-foreground/60 text-sm uppercase tracking-widest">per sq ft</span>
-              <span className="font-outfit text-primary-foreground/40 text-xs uppercase tracking-widest">material + labour</span>
+              <span className="font-outfit md:text-primary-foreground/60 text-primary-foreground/80 text-sm uppercase tracking-widest">per sq ft</span>
+              <span className="font-outfit md:text-primary-foreground/60 text-primary-foreground/80 text-xs uppercase tracking-widest">material + labour</span>
             </div>
           </div>
 
           <div className="max-w-sm">
-            <p className="font-outfit text-primary-foreground/60 text-base leading-relaxed">
+            <p className="font-outfit md:text-primary-foreground/60 text-primary-foreground/80 text-base leading-relaxed">
               Including Material and Installation. We beat any written roofing estimate by 5%.
               Financing options available.
             </p>
