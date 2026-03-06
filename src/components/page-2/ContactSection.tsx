@@ -1,19 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, MapPin, Phone, Mail, ArrowUpRight } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
+import ContactForm from "../shared/ContactForm";
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
 
   return (
     <section id="contact" className="bg-background">
@@ -33,7 +24,7 @@ const ContactSection = () => {
               </span>
             </div>
             <h2 className="font-bebas-neue text-5xl md:text-7xl lg:text-8xl leading-[0.9] mb-8">
-              LET'S<br />
+              LET&apos;S<br />
               <span className="text-accent">BUILD</span><br />
               TOGETHER
             </h2>
@@ -78,63 +69,9 @@ const ContactSection = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="px-6 md:px-16 lg:px-20 py-20 lg:py-32 flex items-center"
+          className="px-6 md:px-16  py-10 lg:py-12 flex items-center justify-center"
         >
-          <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-8">
-            <div>
-              <label className="block font-outfit text-xs uppercase tracking-[0.2em] text-muted-foreground mb-3">Name</label>
-              <input
-                type="text"
-                required
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-0 py-3 bg-transparent border-b-2 border-border text-foreground font-outfit text-lg placeholder:text-muted-foreground/40 focus:outline-none focus:border-accent transition-colors"
-                placeholder="Your full name"
-              />
-            </div>
-            <div>
-              <label className="block font-outfit text-xs uppercase tracking-[0.2em] text-muted-foreground mb-3">Email</label>
-              <input
-                type="email"
-                required
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-0 py-3 bg-transparent border-b-2 border-border text-foreground font-outfit text-lg placeholder:text-muted-foreground/40 focus:outline-none focus:border-accent transition-colors"
-                placeholder="your@email.com"
-              />
-            </div>
-            <div>
-              <label className="block font-outfit text-xs uppercase tracking-[0.2em] text-muted-foreground mb-3">Phone</label>
-              <input
-                type="tel"
-                value={formData.phone}
-                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className="w-full px-0 py-3 bg-transparent border-b-2 border-border text-foreground font-outfit text-lg placeholder:text-muted-foreground/40 focus:outline-none focus:border-accent transition-colors"
-                placeholder="(XXX) XXX-XXXX"
-              />
-            </div>
-            <div>
-              <label className="block font-outfit text-xs uppercase tracking-[0.2em] text-muted-foreground mb-3">Message</label>
-              <textarea
-                rows={3}
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full px-0 py-3 bg-transparent border-b-2 border-border text-foreground font-outfit text-lg placeholder:text-muted-foreground/40 focus:outline-none focus:border-accent transition-colors resize-none"
-                placeholder="Tell us about your roofing needs..."
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full inline-flex items-center justify-center gap-3 bg-accent text-accent-foreground font-outfit font-semibold px-8 py-4 text-base uppercase tracking-wider hover:bg-accent/90 transition-all group"
-            >
-              {submitted ? "Thank You! We'll Be in Touch." : (
-                <>
-                  Send Request
-                  <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                </>
-              )}
-            </button>
-          </form>
+          <ContactForm className="w-full" />
         </motion.div>
       </div>
     </section>
