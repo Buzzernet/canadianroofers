@@ -39,11 +39,11 @@ const Footer = () => {
             <p className="text-primary-foreground/70 text-base leading-relaxed max-w-2xl">
               Our Toronto, GTA based professional roofing contractors provide free roof estimates and give you the best solutions for all your roofing needs. To obtain the free roof estimates please submit the form above and we will get back to you as soon as possible. or give us a call at{" "}
               <a 
-                href="tel:4377033625" 
+                href="tel:6472657047" 
                 className="text-accent hover:text-accent/80 underline transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary-dark rounded"
-                aria-label="Call us at (437) 703-3625"
+                aria-label="Call us at (647) 265-7047"
               >
-                (437) 703-3625
+                (647) 265-7047
               </a>
               . Estimates are free!
             </p>

@@ -34,13 +34,13 @@ const ContactSection = () => {
           </div>
 
           <div className="mt-12 space-y-6">
-            <a href="tel:4377033625" className="flex items-center gap-4 group">
+            <a href="tel:6472657047" className="flex items-center gap-4 group">
               <div className="w-10 h-10 border border-primary-foreground/20 flex items-center justify-center group-hover:border-accent transition-colors">
                 <Phone className="w-4 h-4 text-accent" />
               </div>
               <div>
                 <div className="font-outfit text-primary-foreground/40 text-xs uppercase tracking-widest">Phone</div>
-                <div className="font-outfit text-primary-foreground font-medium">(437) 703-3625</div>
+                <div className="font-outfit text-primary-foreground font-medium">(647) 265-7047</div>
               </div>
             </a>
             <div className="flex items-center gap-4">

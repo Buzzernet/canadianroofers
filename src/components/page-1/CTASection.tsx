@@ -24,11 +24,11 @@ const CTASection = () => {
             Get A Free Estimate
           </a>
           <a
-            href="tel:4377033625"
+            href="tel:6472657047"
             className="inline-flex items-center justify-center gap-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground border border-primary-foreground/30 font-space-grotesk font-bold text-lg px-10 py-4 rounded-lg transition-colors"
           >
             <Phone size={20} />
-            (437) 703-3625
+            (647) 265-7047
           </a>
         </div>
       </div>

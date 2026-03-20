@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
           {/* Right: content info */}
           <div className="md:max-w-2xl w-full text-primary-foreground/40 md:text-lg text-base leading-[130%] md:mt-5">
-            Our Toronto, GTA  based professional roofing contractors provide free roof estimates and give you the best solutions for all your roofing needs. To obtain the free roof estimates please submit the form above and we will get back to you as soon as possible.  or give us a call at (437) 703 3625. Estimates are free!
+            Our Toronto, GTA  based professional roofing contractors provide free roof estimates and give you the best solutions for all your roofing needs. To obtain the free roof estimates please submit the form above and we will get back to you as soon as possible.  or give us a call at (647) 265-7047. Estimates are free!
           </div>
         </div>
       </div>

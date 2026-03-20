@@ -52,11 +52,11 @@ const CTASection = () => {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="tel:4377033625"
+              href="tel:6472657047"
               className="inline-flex items-center justify-center gap-3 border-2 border-accent-foreground/30 text-accent-foreground font-outfit font-semibold px-10 py-4 text-base hover:bg-accent-foreground/10 transition-all"
             >
               <Phone className="w-4 h-4" />
-              (437) 703-3625
+              (647) 265-7047
             </a>
           </motion.div>
         </div>

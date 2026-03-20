@@ -27,7 +27,7 @@ const AboutSection = () => {
               At Canadian Roofers we offer the best pricing and roofing options in Toronto and all across the GTA. Our professional roofing contractors provide free roof estimates and give you the best solutions for all your roofing needs.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              To obtain a free roof estimate please submit the form below and we will get back to you as soon as possible, or give us a call at <a href="tel:4377033625" className="text-accent font-semibold hover:underline">(437) 703-3625</a>. Estimates are free!
+              To obtain a free roof estimate please submit the form below and we will get back to you as soon as possible, or give us a call at <a href="tel:6472657047" className="text-accent font-semibold hover:underline">(647) 265-7047</a>. Estimates are free!
             </p>
             {/* <GoogleStars size="md" /> */}
             <img src={`/images/google-reviews.png`} className="w-[120px] my-6" alt="google-review" />

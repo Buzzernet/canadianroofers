@@ -97,7 +97,7 @@ const HeroSection = () => {
             <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
           </a>
           <a
-            href="tel:4377033625"
+            href="tel:6472657047"
             className="inline-flex items-center justify-center gap-3 border border-primary-foreground/30 text-primary-foreground font-outfit font-medium px-8 py-4 text-base hover:bg-primary-foreground/10 transition-all"
           >
             <Phone className="w-4 h-4" />

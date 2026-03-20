@@ -58,11 +58,11 @@ const HeroSection = () => {
               Get A Free Estimate
             </a>
             <a
-              href="tel:4377033625"
+              href="tel:6472657047"
               className="inline-flex items-center justify-center gap-2 text-primary-foreground/80 hover:text-primary-foreground border border-primary-foreground/20 hover:border-primary-foreground/40 font-space-grotesk font-bold text-sm tracking-wider px-8 py-4 transition-all"
             >
               <Phone size={20} />
-              (437) 703-3625
+              (647) 265-7047
             </a>
           </div>
 

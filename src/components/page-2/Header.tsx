@@ -78,11 +78,11 @@ const Header = () => {
         </Link>
         <div className="hidden lg:flex items-center gap-5">
           <a
-            href="tel:4377033625"
+            href="tel:6472657047"
             className="bg-accent text-accent-foreground font-outfit font-semibold px-6 py-2.5 text-sm uppercase tracking-wider hover:bg-accent/90 transition-all focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary rounded"
-            aria-label="Call us at (437) 703-3625"
+            aria-label="Call us at (647) 265-7047"
           >
-            (437) 703-3625
+            (647) 265-7047
           </a>
         </div>
 
@@ -131,15 +131,15 @@ const Header = () => {
                 </motion.a>
               ))}
               <motion.a
-                href="tel:4377033625"
+                href="tel:6472657047"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
                 className="flex items-center gap-2 text-accent font-outfit font-semibold text-lg mt-4 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary rounded px-2 py-1"
-                aria-label="Call us at (437) 703-3625"
+                aria-label="Call us at (647) 265-7047"
               >
                 <Phone className="w-5 h-5" aria-hidden="true" />
-                (437) 703-3625
+                (647) 265-7047
               </motion.a>
             </nav>
           </motion.div>

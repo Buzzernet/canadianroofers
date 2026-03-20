@@ -9,11 +9,11 @@ const StickyHeader = () => {
         </span>
         <div className="flex items-center gap-4">
           <a
-            href="tel:4377033625"
+            href="tel:6472657047"
             className="hidden sm:flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium transition-colors"
           >
             <Phone size={16} />
-            (437) 703-3625
+            (647) 265-7047
           </a>
           <a
             href="#quote"
