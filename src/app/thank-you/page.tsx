@@ -99,6 +99,9 @@ export default function ThankYouPage() {
       <Script id="google-ads-conversion-leads-2" strategy="afterInteractive">
         {`gtag('event', 'conversion', {'send_to': 'AW-18006693901/ORfhCN3nh4scEI2woYpD'});`}
       </Script>
+      <Script id="bing-uet-thank-you" strategy="afterInteractive">
+        {`(function(w,d,t,u,o){w[u]=w[u]||[],o.ts=(new Date).getTime();var n=d.createElement(t); n.src="https://bat.bing.net/bat.js?ti="+o.ti+("uetq"!=u?"&q="+u:""),n.async=1, n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&"loaded"!==s&&"complete"!==s||( o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad"),n.onload=n.onreadystatechange=null)}; var i=d.getElementsByTagName(t)[0];i.parentNode.insertBefore(n,i); })(window,document,"script","uetq",{ti:"247021270", enableAutoSpaTracking: true});`}
+      </Script>
       <a
         href="#thank-you-main"
         className="absolute left-[-10000px] top-auto z-[100] h-px w-px overflow-hidden focus:left-4 focus:top-4 focus:m-0 focus:h-auto focus:w-auto focus:overflow-visible focus:rounded-md focus:bg-accent focus:px-4 focus:py-3 focus:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
