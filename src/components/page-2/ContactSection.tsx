@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail } from "lucide-react";
-import ContactForm from "../shared/ContactForm";
+import ContactForm2 from "@/components/shared/ContactForm2";
 
 const ContactSection = () => {
 
@@ -71,7 +71,7 @@ const ContactSection = () => {
           viewport={{ once: true }}
           className="px-6 md:px-16  py-10 lg:py-12 flex items-center justify-center"
         >
-          <ContactForm className="w-full" />
+          <ContactForm2 className="w-full" />
         </motion.div>
       </div>
     </section>
