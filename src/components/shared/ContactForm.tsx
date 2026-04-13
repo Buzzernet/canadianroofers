@@ -46,7 +46,6 @@ const ContactForm = ({ className = "" }: ContactFormProps) => {
             window.parent.scrollTo(0, 0);
           }
         }}
-        allowTransparency={true}
         allow="geolocation; microphone; camera; fullscreen; payment"
         src="https://form.jotform.com/260644191687263"
         frameBorder="0"
