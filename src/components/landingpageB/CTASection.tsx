@@ -35,7 +35,7 @@ const CTASection = () => {
             className="font-outfit text-accent-foreground/70 text-lg max-w-lg mb-10"
           >
             Only $4.99 per square foot including material and installation.
-            We'll beat any written estimate by 5%.
+            We&apos;ll beat any written estimate by 5%.
           </motion.p>
 
           <motion.div

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
@@ -49,9 +50,15 @@ const TestimonialsSection = () => {
             </h2>
             {/* Giant decorative quote */}
             <span className="font-bebas-neue text-[200px] md:text-[300px] leading-none text-border/50 select-none -mt-16 block">
-              "
+              {"\u201C"}
             </span>
-            <img src={`/images/google-reviews.png`} alt="Google reviews" className="md:w-[140px] w-[100px] md:h-[55px] h-[40px] md:mt-[-170px] mt-[-110px]" />
+            <Image
+              src="/images/google-reviews.png"
+              alt="Google reviews"
+              width={140}
+              height={55}
+              className="md:w-[140px] w-[100px] md:h-[55px] h-[40px] md:mt-[-170px] mt-[-110px]"
+            />
           </motion.div>
 
           {/* Right: single testimonial with navigation */}
@@ -69,7 +76,7 @@ const TestimonialsSection = () => {
                 ))}
               </div>
               <p className="font-outfit text-foreground text-2xl md:text-3xl leading-tight font-light mb-8">
-                "{t.text}"
+                {`\u201C${t.text}\u201D`}
               </p>
               <div>
                 <div className="font-bebas-neue text-2xl text-foreground">{t.name}</div>

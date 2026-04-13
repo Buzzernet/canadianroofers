@@ -11,7 +11,7 @@ const QuoteForm = () => {
               Request A Free Roof Estimate
             </h2>
             <p className="text-muted-foreground text-lg mb-3">
-              Fill out the form below and we'll get back to you as soon as possible.
+              Fill out the form below and we&apos;ll get back to you as soon as possible.
             </p>
             <GoogleStars size="md" className="justify-center" />
           </div>

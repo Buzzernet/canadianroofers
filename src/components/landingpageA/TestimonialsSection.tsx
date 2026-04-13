@@ -1,5 +1,5 @@
+import Image from "next/image";
 import { Star } from "lucide-react";
-import GoogleReviewImg from "../../public/images/google-reviews.png"
 
 const testimonials = [
   {
@@ -29,7 +29,13 @@ const TestimonialsSection = () => {
             What Our Customers Say
           </h2>
           <div className="flex justify-center mt-4">
-            <img src={`/images/google-reviews.png`} className="w-[120px] " alt="google-reviews" />
+            <Image
+              src="/images/google-reviews.png"
+              alt="Google reviews"
+              width={120}
+              height={49}
+              className="w-[120px] h-auto"
+            />
           </div>
           {/* <GoogleStars size="lg" className="justify-center" /> */}
         </div>
@@ -45,7 +51,9 @@ const TestimonialsSection = () => {
                   <Star key={i} size={16} className="fill-star text-star" />
                 ))}
               </div>
-              <p className="text-muted-foreground mb-8 leading-relaxed text-[15px] italic">"{t.text}"</p>
+              <p className="text-muted-foreground mb-8 leading-relaxed text-[15px] italic">
+                {`\u201C${t.text}\u201D`}
+              </p>
               <div>
                 <p className="font-semibold text-foreground">{t.name}</p>
                 <p className="text-muted-foreground text-sm">{t.location}</p>

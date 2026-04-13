@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -8,11 +8,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-12">
           {/* Left: content info */}
           <div>
-            <img
-              src={`/images/logo.webp`}
+            <Image
+              src="/images/logo.webp"
               alt="Canadian Roofers"
+              width={250}
+              height={120}
               className="w-[250px] h-[120px]"
-            ></img>
+            />
             <p className="font-outfit text-primary-foreground/40 text-sm my-3 max-w-sm">
               High quality & affordable roofing solutions for Toronto and the GTA. Only $4.99/sq ft.
             </p>

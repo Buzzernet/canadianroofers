@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { cookies } from "next/headers";
+import { headers } from "next/headers";
 import LandingPageA from "@/components/landingpageA";
 import LandingPageB from "@/components/landingpageB";
-import { AB_COOKIE_NAME, AB_TTL_SECONDS } from "@/lib/ab-testing";
-import { resolveAbVariantFromCookie } from "@/lib/pick-ab-variant";
 
 export const metadata: Metadata = {
   title:
@@ -40,13 +38,8 @@ export const metadata: Metadata = {
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const cookieStore = await cookies();
-  const raw = cookieStore.get(AB_COOKIE_NAME)?.value;
-  const variant = resolveAbVariantFromCookie(
-    raw,
-    Date.now(),
-    AB_TTL_SECONDS * 1000,
-  );
+  const headersList = await headers();
+  const variant = headersList.get("x-ab-variant") ?? "A";
 
   if (variant === "B") {
     return <LandingPageB />;
