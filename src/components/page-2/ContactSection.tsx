@@ -49,7 +49,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <div className="font-outfit text-primary-foreground/40 text-xs uppercase tracking-widest">Email</div>
-                <div className="font-outfit text-primary-foreground font-medium">info@roofinstaller.ca</div>
+                <div className="font-outfit text-primary-foreground font-medium"><a href="mailto:info@canadianroofers.ca" aria-label="Email us at info@canadianroofers.ca">info@canadianroofers.ca</a></div>
               </div>
             </div>
             <div className="flex items-center gap-4">
