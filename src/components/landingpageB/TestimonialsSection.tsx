@@ -55,6 +55,7 @@ const TestimonialsSection = () => {
             <Image
               src="/images/google-reviews.png"
               alt="Google Reviews testimonials for Canadian Roofers"
+              title="Google Reviews testimonials for Canadian Roofers"
               width={140}
               height={55}
               className="md:w-[140px] w-[100px] md:h-[55px] h-[40px] md:mt-[-170px] mt-[-110px]"

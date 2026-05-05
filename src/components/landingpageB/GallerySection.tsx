@@ -3,8 +3,15 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const GallerySection = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const images = [
     { src: "/images/slider-1.webp", alt: "Professional shingle roof installation in Toronto" },
     { src: "/images/content-image-6.webp", alt: "Roofing contractor working on residential roof" },
@@ -44,27 +51,47 @@ const GallerySection = () => {
       {/* Asymmetric gallery - staggered heights */}
       <div className="container mx-auto px-4 pb-24 md:pb-32">
         <div className="w-full h-full">
-          <ResponsiveMasonry
-            columnsCountBreakPoints={{ 350: 1, 768: 2, 1024: 3, 1280: 4 }}
-          >
-            <Masonry gutter="16px">
+          {isMounted ? (
+            <ResponsiveMasonry
+              columnsCountBreakPoints={{ 350: 1, 768: 2, 1024: 3, 1280: 4 }}
+            >
+              <Masonry gutter="16px">
+                {images.map((image, i) => (
+                  <div key={i} className="overflow-hidden rounded-xl">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      title={image.alt}
+                      width={600}
+                      height={400}
+                      className="h-auto w-full object-cover max-h-[250px]"
+                      loading="lazy"
+                      sizes="(max-width: 350px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                      fetchPriority={i < 4 ? "high" : "low"}
+                    />
+                  </div>
+                ))}
+              </Masonry>
+            </ResponsiveMasonry>
+          ) : (
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {images.map((image, i) => (
                 <div key={i} className="overflow-hidden rounded-xl">
                   <Image
                     src={image.src}
                     alt={image.alt}
+                    title={image.alt}
                     width={600}
                     height={400}
                     className="h-auto w-full object-cover max-h-[250px]"
                     loading="lazy"
-                    sizes="(max-width: 350px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     fetchPriority={i < 4 ? "high" : "low"}
                   />
                 </div>
               ))}
-            </Masonry>
-          </ResponsiveMasonry>
-
+            </div>
+          )}
         </div>
       </div>
     </section>

@@ -29,6 +29,7 @@ const AboutSection = () => {
           <Image
             src="/images/content-image-2.webp"
             alt="Canadian Roofers professional roofing team working on Toronto and GTA residential and commercial projects"
+            title="Canadian Roofers professional roofing team working on Toronto and GTA residential and commercial projects"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"

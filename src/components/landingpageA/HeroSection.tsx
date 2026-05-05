@@ -9,6 +9,7 @@ const HeroSection = () => {
         <Image
           src={`/images/slider-1.webp`}
           alt="Professional shingle roof installation in Canada"
+          title="Professional shingle roof installation in Canada"
           fill
           priority
           className="w-full h-full object-cover"
@@ -26,6 +27,7 @@ const HeroSection = () => {
             <Image
               src="/images/logo.webp"
               alt="Canadian Roofers logo - roofing company in Toronto"
+              title="Canadian Roofers logo - roofing company in Toronto"
               width={240}
               height={80}
               priority

@@ -113,6 +113,7 @@ export default function ThankYouPage() {
             <Image
               src="/images/logo.webp"
               alt={`${SITE_NAME} — Return to homepage`}
+              title={`${SITE_NAME} — Return to homepage`}
               width={200}
               height={67}
               priority

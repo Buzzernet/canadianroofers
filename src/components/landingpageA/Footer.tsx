@@ -18,6 +18,7 @@ const Footer = () => {
               <Image 
                 src="/images/logo.webp" 
                 alt="Canadian Roofers - Professional Roofing Services in Toronto and GTA" 
+                title="Canadian Roofers - Professional Roofing Services in Toronto and GTA"
                 width={240}
                 height={80}
                 className="max-w-[240px] w-auto h-auto"

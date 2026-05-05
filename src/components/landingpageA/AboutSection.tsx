@@ -10,6 +10,7 @@ const AboutSection = () => {
               <Image
                 src="/images/content-image-1.webp"
                 alt="Canadian Roofers professional installing shingles"
+                title="Canadian Roofers professional installing shingles"
                 width={800}
                 height={1000}
                 className="w-full object-cover aspect-[4/5] z-20 h-auto"
@@ -37,6 +38,7 @@ const AboutSection = () => {
             <Image
               src="/images/google-reviews.png"
               alt="Google Reviews rating for Canadian Roofers Toronto"
+              title="Google Reviews rating for Canadian Roofers Toronto"
               width={120}
               height={49}
               className="w-[120px] h-auto my-6"

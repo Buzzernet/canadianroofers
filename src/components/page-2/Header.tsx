@@ -69,6 +69,7 @@ const Header = () => {
           <Image
             src="/images/logo.webp"
             alt="Canadian Roofers - Professional Roofing Services in Toronto and GTA"
+            title="Canadian Roofers - Professional Roofing Services in Toronto and GTA"
             width={180}
             height={60}
             className="w-[180px] h-auto"
