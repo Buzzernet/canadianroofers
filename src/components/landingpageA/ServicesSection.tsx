@@ -44,7 +44,7 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group relative bg-gradient-to-b from-surface via-surface to-surface/95  p-8  transition-all duration-500  overflow-hidden animate-fade-in-up hover:-translate-y-2"
+              className="group relative bg-gradient-to-b from-surface via-surface to-surface/95  p-8  transition-all duration-500  overflow-hidden motion-safe:animate-fade-in-up hover:-translate-y-2"
               style={{
                 animationDelay: `${index * 0.1}s`,
               }}

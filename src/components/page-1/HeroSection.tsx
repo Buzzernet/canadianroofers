@@ -1,25 +1,50 @@
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 import { Phone } from "lucide-react";
 
 const HeroSection = () => {
+  const { props: desktopHeroImage } = getImageProps({
+    src: "/images/slider-1.webp",
+    alt: "Professional shingle roof installation in Canada",
+    width: 1920,
+    height: 1080,
+    quality: 80,
+    sizes: "100vw",
+    priority: true,
+  });
+
+  const { props: mobileHeroImage } = getImageProps({
+    src: "/images/slider-1-mobile.webp",
+    alt: "Professional shingle roof installation in Canada",
+    width: 828,
+    height: 1472,
+    quality: 80,
+    sizes: "100vw",
+    priority: true,
+  });
+
   return (
     <section className="relative md:min-h-[90vh] flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <Image
-          src={`/images/slider-1.webp`}
-          alt="Professional shingle roof installation in Canada"
-          title="Professional shingle roof installation in Canada"
-          fill
-          priority
-          className="w-full h-full object-cover"
-          sizes="100vw"
-        />
+        <picture>
+          <source media="(max-width: 767px)" srcSet={mobileHeroImage.srcSet} sizes="100vw" />
+          <img
+            src={desktopHeroImage.src}
+            srcSet={desktopHeroImage.srcSet}
+            sizes={desktopHeroImage.sizes}
+            alt={desktopHeroImage.alt}
+            title="Professional shingle roof installation in Canada"
+            fetchPriority="high"
+            loading="eager"
+            decoding="async"
+            className="h-full w-full object-cover"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-t md:from-primary-dark/80 md:via-primary-dark/60 md:to-primary-dark/60 from-primary-dark/95 to-primary-dark/75" />
       </div>
 
       <div className="container relative z-10 py-10 flex md:flex-row flex-col gap-20 items-end">
-        <div className="max-w-2xl space-y-6 animate-fade-in-up">
+        <div className="max-w-2xl space-y-6 motion-safe:animate-fade-in-up">
           {/* <GoogleStars size="lg" className="[&_span]:text-primary-foreground [&_.text-muted-foreground]:text-primary-foreground/70" />
            */}
           {/* Logo */}
@@ -30,7 +55,7 @@ const HeroSection = () => {
               title="Canadian Roofers logo - roofing company in Toronto"
               width={240}
               height={80}
-              priority
+              loading="lazy"
               className="max-w-[240px] w-auto h-auto"
             />
           </div>

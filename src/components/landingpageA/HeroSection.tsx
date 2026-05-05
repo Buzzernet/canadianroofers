@@ -19,7 +19,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container relative z-10 py-10 flex md:flex-row flex-col gap-20 items-end">
-        <div className="max-w-2xl space-y-6 animate-fade-in-up">
+        <div className="max-w-2xl space-y-6 motion-safe:animate-fade-in-up">
           {/* <GoogleStars size="lg" className="[&_span]:text-primary-foreground [&_.text-muted-foreground]:text-primary-foreground/70" />
            */}
           {/* Logo */}

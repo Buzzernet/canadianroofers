@@ -117,23 +117,23 @@ body {
 }
 
 .font-space-grotesk {
-  font-family: "Space Grotesk", sans-serif !important;
+  font-family: var(--font-space-grotesk), sans-serif !important;
 }
 
 .font-dm-sans {
-  font-family: "DM Sans", sans-serif !important;
+  font-family: var(--font-dm-sans), sans-serif !important;
 }
 
 .font-playfair-display {
-  font-family: "Playfair Display", serif !important;
+  font-family: var(--font-playfair-display), serif !important;
 }
 
 .font-bebas-neue {
-  font-family: var(--font-bebas-neue);
+  font-family: var(--font-bebas-neue), sans-serif;
 }
 
 .font-outfit {
-  font-family: var(--font-outfit);
+  font-family: var(--font-outfit), sans-serif;
 }
 
 
@@ -206,6 +206,14 @@ body {
 @keyframes marquee-reverse {
   0% { transform: translateX(-50%); }
   100% { transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee,
+  .marquee-reverse,
+  .animate-fade-in-up {
+    animation: none !important;
+  }
 }
 
 

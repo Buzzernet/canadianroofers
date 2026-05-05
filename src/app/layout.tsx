@@ -19,12 +19,14 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
   display: "swap",
+  preload: false,
 });
 
 const dmSans = DM_Sans ({
   variable: "--font-dm-sans",
   subsets: ["latin"],
   display: "swap",
+  preload: true,
 })
 
 const playfairDisplay = Playfair_Display({
@@ -38,12 +40,14 @@ const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
   weight: "400",
   display: "swap",
+  preload: false,
 });
 
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
   display: "swap",
+  preload: false,
 });
 
 const fonts = [
@@ -113,9 +117,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {/* Google tag (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-RXQ2CZ937K"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -124,7 +128,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           `}
         </Script>
         {/* Microsoft UET (Bing Ads) */}
-        <Script id="microsoft-uet" strategy="afterInteractive">
+        <Script id="microsoft-uet" strategy="lazyOnload">
           {`
             (function(w, d, t, u, o) {
               w[u] = w[u] || [], o.ts = (new Date).getTime();

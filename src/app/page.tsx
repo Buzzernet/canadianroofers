@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import LandingPageA from "@/components/landingpageA";
 import { seoGenerateMetadata } from "@/components/Seo";
 
-export const dynamic = "force-dynamic"; // always run on each request
+export const revalidate = 3600;
 const metaTitle =
   "Roofing Company in Toronto | Repair & Installation Experts";
 const metaDescription =
