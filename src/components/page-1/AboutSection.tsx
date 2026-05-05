@@ -36,7 +36,7 @@ const AboutSection = () => {
             {/* <GoogleStars size="md" /> */}
             <Image
               src="/images/google-reviews.png"
-              alt="Google reviews"
+              alt="Google Reviews rating for Canadian Roofers Toronto"
               width={120}
               height={49}
               className="w-[120px] h-auto my-6"

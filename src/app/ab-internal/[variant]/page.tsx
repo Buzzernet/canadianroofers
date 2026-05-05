@@ -33,6 +33,18 @@ export const metadata: Metadata = {
     description:
       "Toronto's most affordable roofing contractors. Only $4.99/sq ft including materials & installation. We beat any estimate by 5%.",
   },
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
+  },
 };
 
 type PageProps = {

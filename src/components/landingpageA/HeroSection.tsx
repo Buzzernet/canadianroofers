@@ -25,7 +25,7 @@ const HeroSection = () => {
           <div>
             <Image
               src="/images/logo.webp"
-              alt="Logo"
+              alt="Canadian Roofers logo - roofing company in Toronto"
               width={240}
               height={80}
               priority

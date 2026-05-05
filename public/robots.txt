@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /ab-internal/
+Disallow: /api/
+
+Sitemap: https://canadianroofers.ca/sitemap.xml
+Host: https://canadianroofers.ca

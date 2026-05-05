@@ -12,7 +12,7 @@ import "./globals.css";
 function getSiteUrl() {
   if (process.env.NEXT_PUBLIC_SITE_URL) return process.env.NEXT_PUBLIC_SITE_URL;
   if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
-  return "http://localhost:3000";
+  return "https://canadianroofers.ca";
 }
 
 const spaceGrotesk = Space_Grotesk({
@@ -54,6 +54,9 @@ const fonts = [
   dmSans.variable,
 ].join(" ");
 
+const twitterSite = process.env.NEXT_PUBLIC_TWITTER_SITE;
+const twitterCreator = process.env.NEXT_PUBLIC_TWITTER_CREATOR;
+
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: {
@@ -62,6 +65,38 @@ export const metadata: Metadata = {
   },
   description:
     "Professional roofing contractors in Toronto & GTA offering roof repair, installation, shingles, gutters & skylights. Get a free estimate today with affordable pricing and warranty.",
+  openGraph: {
+    title:
+      "Roofing Contractors Toronto & GTA | Affordable Roof Repair & Installation",
+    description:
+      "Professional roofing contractors in Toronto & GTA offering roof repair, installation, shingles, gutters & skylights. Get a free estimate today with affordable pricing and warranty.",
+    url: "/",
+    siteName: "Canadian Roofers",
+    locale: "en_CA",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Canadian Roofers Toronto roof repair and installation services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Roofing Contractors Toronto & GTA | Affordable Roof Repair & Installation",
+    description:
+      "Professional roofing contractors in Toronto & GTA offering roof repair, installation, shingles, gutters & skylights. Get a free estimate today with affordable pricing and warranty.",
+    images: ["/og-image.png"],
+    ...(twitterSite ? { site: twitterSite } : {}),
+    ...(twitterCreator ? { creator: twitterCreator } : {}),
+  },
+  other: {
+    "twitter:image:alt":
+      "Canadian Roofers Toronto roof repair and installation services",
+  },
   icons: {
     icon: "/favicon.ico",
   },
@@ -77,7 +112,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={`${fonts} antialiased`}>
         {/* Google tag (gtag.js) */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-804750091"
+          src="https://www.googletagmanager.com/gtag/js?id=G-RXQ2CZ937K"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -85,7 +120,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'AW-804750091');
+            gtag('config', 'G-RXQ2CZ937K');
           `}
         </Script>
         {/* Microsoft UET (Bing Ads) */}

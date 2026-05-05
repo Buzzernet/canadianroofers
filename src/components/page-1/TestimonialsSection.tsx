@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
           <div className="flex justify-center mt-4">
             <Image
               src="/images/google-reviews.png"
-              alt="Google reviews"
+              alt="Google Reviews testimonials for Canadian Roofers"
               width={120}
               height={49}
               className="w-[120px] h-auto"

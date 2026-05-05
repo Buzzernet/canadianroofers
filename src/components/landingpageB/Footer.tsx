@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <Image
               src="/images/logo.webp"
-              alt="Canadian Roofers"
+              alt="Canadian Roofers logo - roof repair and installation in Toronto"
               width={250}
               height={120}
               className="w-[250px] h-[120px]"

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import { CheckCircle2 } from "lucide-react";
+import { seoGenerateMetadata } from "@/components/Seo";
 
 const SITE_NAME = "Canadian Roofers";
 const PHONE_DISPLAY = "(647) 265-7047";
@@ -10,35 +11,29 @@ const PHONE_TEL = "tel:6472657047";
 
 const PAGE_DESCRIPTION =
   "Your free roofing estimate request was submitted successfully. Canadian Roofers will contact you shortly about your Toronto or GTA roofing project. Call (647) 265-7047 for urgent questions.";
+const metaTitle = "Thank You | Roofing Estimate Request Received";
+const metaDescription =
+  "Thanks for requesting your free roofing estimate. Canadian Roofers has received your details and our team will contact you shortly to discuss your project in Toronto or the GTA.";
+const metaImage = "/og-image.png";
 
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Thank You — We Received Your Roofing Estimate Request",
-  description: PAGE_DESCRIPTION,
-  alternates: {
-    canonical: "/thank-you",
-  },
+  ...seoGenerateMetadata({
+    title: metaTitle,
+    description: metaDescription,
+    url: "/thank-you",
+    imageUrl: metaImage,
+    imageAlt:
+      "Thank you page for Canadian Roofers estimate request submission",
+    twitterSite: process.env.NEXT_PUBLIC_TWITTER_SITE,
+    twitterCreator: process.env.NEXT_PUBLIC_TWITTER_CREATOR,
+  }),
   // noindex: avoids thin duplicate SERP entries; follow keeps link equity from this page.
   robots: {
     index: false,
     follow: true,
     googleBot: { index: false, follow: true },
-  },
-  openGraph: {
-    title: `Thank You | ${SITE_NAME}`,
-    description:
-      "Your roofing estimate request was received. We will contact you soon about your Toronto or GTA project.",
-    url: "/thank-you",
-    type: "website",
-    locale: "en_CA",
-    siteName: SITE_NAME,
-  },
-  twitter: {
-    card: "summary",
-    title: `Thank You | ${SITE_NAME}`,
-    description:
-      "Your roofing estimate request was received. We will contact you soon.",
   },
 };
 
@@ -210,7 +205,7 @@ export default function ThankYouPage() {
               Return to homepage
             </Link>
             <Link
-              href="/landingpage2"
+              href="/page2"
               className="inline-flex min-h-11 items-center justify-center rounded-md border border-border bg-background px-6 py-2.5 text-center text-sm font-semibold text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 sm:min-h-12 sm:text-base"
             >
               View services overview
