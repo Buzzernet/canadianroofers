@@ -89,13 +89,13 @@ const TestimonialsSection = () => {
             <div className="flex items-center gap-4">
               <button
                 onClick={prev}
-                className="w-12 h-12 border border-border hover:border-accent hover:text-accent flex items-center justify-center transition-colors"
+                className="w-12 h-12 border border-accent text-accent flex items-center justify-center transition-colors"
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
               <button
                 onClick={next}
-                className="w-12 h-12 border border-border hover:border-accent hover:text-accent flex items-center justify-center transition-colors"
+                className="w-12 h-12 border border-accent text-accent flex items-center justify-center transition-colors"
               >
                 <ChevronRight className="w-5 h-5" />
               </button>

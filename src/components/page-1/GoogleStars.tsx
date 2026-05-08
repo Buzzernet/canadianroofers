@@ -17,7 +17,7 @@ const GoogleStars = ({ className = "", size = "md" }: GoogleStarsProps) => {
     <div className={`flex items-center gap-1.5 ${className}`}>
       <div className="flex gap-0.5">
         {[...Array(5)].map((_, i) => (
-          <Star key={i} size={s.star} className="fill-star text-star" />
+          <Star key={i} size={s.star} fill="#FFD700" />
         ))}
       </div>
       <span className={`${s.text} font-semibold text-foreground`}>5.0</span>

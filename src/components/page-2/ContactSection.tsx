@@ -18,7 +18,7 @@ const ContactSection = () => {
         >
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-[2px] bg-accent" />
+              <div className="w-12 h-12 bg-accent" />
               <span className="font-outfit text-accent text-sm uppercase tracking-[0.3em] font-medium">
                 Get In Touch
               </span>

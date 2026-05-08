@@ -45,11 +45,11 @@ const TestimonialsSection = () => {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-card rounded-xl p-6 shadow-sm border border-border"
+              className="bg-card rounded-xl p-6 shadow-sm border border-accent"
             >
               <div className="flex gap-0.5 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} className="fill-star text-star" />
+                  <Star key={i} size={16} fill="#FFD700" />
                 ))}
               </div>
               <p className="text-muted-foreground mb-8 leading-relaxed text-[15px] italic">
