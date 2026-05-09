@@ -6,7 +6,7 @@ type ContactFormProps = {
 
 const ContactForm = ({ className = "" }: ContactFormProps) => {
   return (
-    <div className={`w-full h-205 mb-6`}>
+    <div className={`w-full h-270 mb-1`}>
       <iframe
         id="JotFormIFrame-260644191687263"
         title="Canadian Roofers Roofing Roof Installer Form Netlify"
@@ -21,7 +21,7 @@ const ContactForm = ({ className = "" }: ContactFormProps) => {
         style={{
           minWidth: "100%",
           maxWidth: "100%",
-          height: "900px",
+          height: "990px",
           border: "none",
         }}
         scrolling="no"
