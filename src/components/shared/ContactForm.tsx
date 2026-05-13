@@ -1,30 +1,21 @@
-"use client";
-
 type ContactFormProps = {
   className?: string;
 };
 
 const ContactForm = ({ className = "" }: ContactFormProps) => {
   return (
-    <div className={`w-full h-270 mb-1`}>
+    <div className={`w-full ${className}`}>
       <iframe
-        id="JotFormIFrame-260644191687263"
-        title="Canadian Roofers Roofing Roof Installer Form Netlify"
-        onLoad={() => {
-          if (window.parent) {
-            window.parent.scrollTo(0, 0);
-          }
-        }}
-        allow="geolocation; microphone; camera; fullscreen; payment"
-        src="https://form.jotform.com/260644191687263"
-        frameBorder="0"
+        aria-label="Get a free estimate"
+        title="Get a free estimate"
+        src="https://forms.zohopublic.ca/bimg/form/ClientDetails/formperma/Kmx4x8ESi12IeyPWk4mm7sO_mauWFBPfQjcV5nkU-Uw"
+        frameBorder={0}
         style={{
-          minWidth: "100%",
-          maxWidth: "100%",
-          height: "990px",
+          height: "720px",
+          width: "99%",
           border: "none",
         }}
-        scrolling="no"
+        loading="lazy"
       />
     </div>
   );

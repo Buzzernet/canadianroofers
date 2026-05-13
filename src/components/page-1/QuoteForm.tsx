@@ -3,7 +3,7 @@ import ContactForm from "../shared/ContactForm";
 
 const QuoteForm = () => {
   return (
-    <section className="py-20 bg-surface" id="quote">
+    <section className="pt-20 pb-4 bg-[#edeff4]" id="quote">
       <div className="container">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-10">

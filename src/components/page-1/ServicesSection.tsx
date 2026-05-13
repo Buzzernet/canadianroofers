@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Home, Shield, Wind, Layers, Droplets, Sun, Wrench, Scissors, PaintBucket } from "lucide-react";
+import { Home, Shield, Wind, Layers, Droplets, Sun, Wrench, Scissors, LayoutPanelTop } from "lucide-react";
 
 type Service = {
   icon: LucideIcon;
@@ -16,7 +16,7 @@ const services: Service[] = [
   { icon: Sun, title: "Skylight Installation", desc: "Skylight installation and repair for natural light" },
   { icon: Wrench, title: "Chimney Roof Repairs", desc: "Expert chimney flashing and roof repair" },
   { icon: Scissors, title: "Gutter Services", desc: "Gutter cleaning, repairs, and replacement" },
-  { icon: PaintBucket, title: "Roof Caulking", desc: "Professional caulking and recaulking services" },
+  { icon: LayoutPanelTop, title: "Metal Roofing", desc: "Steel and aluminum standing-seam and panel roofs, installed and repaired for long life" },
 ];
 
 export default function ServicesSection() {
