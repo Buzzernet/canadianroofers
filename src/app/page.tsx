@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import LandingPageA from "@/components/landingpageA";
 import { seoGenerateMetadata } from "@/components/Seo";
+import BaseLayout from "@/components/BaseLayout";
 
 export const revalidate = 3600;
 const metaTitle =
@@ -20,5 +21,9 @@ export const metadata: Metadata = seoGenerateMetadata({
 });
 
 export default async function Home() {
-  return <LandingPageA />;
+  return (
+    <BaseLayout>
+      <LandingPageA />
+    </BaseLayout>
+  );
 }
