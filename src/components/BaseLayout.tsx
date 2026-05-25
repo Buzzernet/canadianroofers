@@ -105,7 +105,6 @@ export const metadata: Metadata = {
         icon: "/favicon.ico",
     },
 };
-
 type RootLayoutProps = {
     children: React.ReactNode;
     page?: string;
@@ -153,7 +152,7 @@ const BaseLayout = ({ children, page }: RootLayoutProps) => {
                 {page === 'thank-you' && (
                     <>
                         <Script id="google-ads-conversion-leads-2" strategy="afterInteractive">
-                            {`gtag('event', 'conversion', {'send_to': 'AW-18006693901/ORfhCN3nh4scEI2woYpD'});`}
+                            {`gtag('event', 'conversion', {'send_to': 'AW-18006693901/BLkLCMbVjbMcEI2woYpD'});`}
                         </Script>
                         <Script id="bing-uet-thank-you" strategy="afterInteractive">
                             {`(function(w,d,t,u,o){w[u]=w[u]||[],o.ts=(new Date).getTime();var n=d.createElement(t); n.src="https://bat.bing.net/bat.js?ti="+o.ti+("uetq"!=u?"&q="+u:""),n.async=1, n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&"loaded"!==s&&"complete"!==s||( o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad"),n.onload=n.onreadystatechange=null)}; var i=d.getElementsByTagName(t)[0];i.parentNode.insertBefore(n,i); })(window,document,"script","uetq",{ti:"247021270", enableAutoSpaTracking: true});`}
@@ -166,5 +165,4 @@ const BaseLayout = ({ children, page }: RootLayoutProps) => {
         </>
     );
 }
-
 export default BaseLayout;

@@ -94,12 +94,12 @@ export default function ThankYouPage() {
       />
       {/* Event snippet for LEADS 2 conversion page — afterInteractive so gtag from root layout is available */}
       
-      <a
-        href="#thank-you-main"
-        className="absolute left-[-10000px] top-auto z-[100] h-px w-px overflow-hidden focus:left-4 focus:top-4 focus:m-0 focus:h-auto focus:w-auto focus:overflow-visible focus:rounded-md focus:bg-accent focus:px-4 focus:py-3 focus:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
-      >
-        Skip to main content
-      </a>
+        <a
+          href="#thank-you-main"
+          className="absolute left-[-10000px] top-auto z-[100] h-px w-px overflow-hidden focus:left-4 focus:top-4 focus:m-0 focus:h-auto focus:w-auto focus:overflow-visible focus:rounded-md focus:bg-accent focus:px-4 focus:py-3 focus:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background"
+        >
+          Skip to main content
+        </a>
 
       <header className="border-b border-border  bg-[#152336]">
         <div className="container flex items-center justify-center py-5 sm:py-6">
