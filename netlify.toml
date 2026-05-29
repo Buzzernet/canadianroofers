@@ -1,0 +1,19 @@
+# netlify.toml
+
+[[redirects]]
+  from = "https://www.canadianroofers.ca/*"
+  to = "https://canadianroofers.ca/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.canadianroofers.ca/*"
+  to = "https://canadianroofers.ca/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://canadianroofers.ca/*"
+  to = "https://canadianroofers.ca/:splat"
+  status = 301
+  force = true

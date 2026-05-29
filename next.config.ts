@@ -12,24 +12,7 @@ const nextConfig = {
   trailingSlash: false,
 
 
-  async redirects() {
-    return [
-      // Redirect www → non-www (HTTPS)
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.canadianroofers.ca' }],
-        destination: 'https://canadianroofers.ca/:path*',
-        permanent: true, // 301
-      },
-      // Redirect HTTP non-www → HTTPS non-www
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'canadianroofers.ca' }],
-        destination: 'https://canadianroofers.ca/:path*',
-        permanent: true,
-      },
-    ];
-  },
+
 
   images: {
     formats: ["image/avif", "image/webp"],
