@@ -1,19 +1,27 @@
-# netlify.toml
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
 
 [[redirects]]
-  from = "https://www.canadianroofers.ca/*"
-  to = "https://canadianroofers.ca/:splat"
+  from   = "https://www.canadianroofers.ca/*"
+  to     = "https://canadianroofers.ca/:splat"
   status = 301
-  force = true
+  force  = true
 
 [[redirects]]
-  from = "http://www.canadianroofers.ca/*"
-  to = "https://canadianroofers.ca/:splat"
+  from   = "http://www.canadianroofers.ca/*"
+  to     = "https://canadianroofers.ca/:splat"
   status = 301
-  force = true
+  force  = true
 
 [[redirects]]
-  from = "http://canadianroofers.ca/*"
-  to = "https://canadianroofers.ca/:splat"
+  from   = "http://canadianroofers.ca/*"
+  to     = "https://canadianroofers.ca/:splat"
   status = 301
-  force = true
+  force  = true
