@@ -6,7 +6,10 @@ function getSiteUrl() {
   return "https://canadianroofers.ca";
 }
 
-const routes = ["/"];
+const routes = [
+  "/",
+  "/metal-roofing-installation-ontario/"
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = getSiteUrl();
