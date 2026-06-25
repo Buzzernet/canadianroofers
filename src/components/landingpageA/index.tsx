@@ -7,6 +7,7 @@ import TestimonialsSection from "@/components/page-1/TestimonialsSection";
 import WhyChooseUs from "@/components/page-1/WhyChooseUs";
 import Footer from "@/components/page-1/Footer";
 import GallerySection from "@/components/page-1/GallerySection";
+import NewRoofCost from "./NewRoofCost"
 
 
 export default function LandingPageA() {
@@ -16,6 +17,7 @@ export default function LandingPageA() {
       <ServicesSection />
       <AboutSection />
       <WhyChooseUs />
+      <NewRoofCost />
       <TestimonialsSection />
       <GallerySection />
       <CTASection />
