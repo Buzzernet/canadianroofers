@@ -74,8 +74,9 @@ const HeroSection = () => {
           </p> */}
 
           <p className="md:text-primary-foreground/60 text-primary-foreground/80 text-lg max-w-lg leading-relaxed">
-          Trusted Toronto & GTA roofers offering free roof inspections and honest roof replacement estimates starting<br/>from $4.99 per square foot (for standard asphalt shingles)
-          <br/>Click Below To Claim Your Free Roof Inspection Now.
+          Protect Your Home With A Quality Roof Installed By Trusted Toronto & GTA Roofers. Free Roof Inspections And New Roofs Starting At Just $4.99 Per Sq. Ft.
+          </p>
+          <p className="md:text-primary-foreground/60 text-primary-foreground/80 text-lg max-w-lg leading-relaxed">Schedule Your Free Roof Inspection Now.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
