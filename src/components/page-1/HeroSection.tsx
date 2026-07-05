@@ -43,7 +43,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-linear-to-t md:from-primary-dark/80 md:via-primary-dark/60 md:to-primary-dark/60 from-primary-dark/95 to-primary-dark/75" />
       </div>
 
-      <div className="container relative z-10 py-10 flex md:flex-row flex-col gap-20 sm:items-center items-end sm:justify-between justify-center">
+      <div className="container relative z-10 py-10 flex md:flex-row flex-col gap-20 sm:items-end items-center sm:justify-between justify-center">
         <div className="max-w-2xl space-y-6 motion-safe:animate-fade-in-up">
           {/* <GoogleStars size="lg" className="[&_span]:text-primary-foreground [&_.text-muted-foreground]:text-primary-foreground/70" />
            */}
