@@ -43,12 +43,12 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-t md:from-primary-dark/80 md:via-primary-dark/60 md:to-primary-dark/60 from-primary-dark/95 to-primary-dark/75" />
       </div>
 
-      <div className="container relative z-10 py-10 flex md:flex-row flex-col gap-20 items-center justify-between">
+      <div className="container relative z-10 py-10 flex md:flex-row flex-col gap-20 items-center sm:justify-between justify-center">
         <div className="max-w-2xl space-y-6 motion-safe:animate-fade-in-up">
           {/* <GoogleStars size="lg" className="[&_span]:text-primary-foreground [&_.text-muted-foreground]:text-primary-foreground/70" />
            */}
           {/* Logo */}
-          <div>
+          <div className="flex sm:justify-start justify-center">
             <Image
               src="/images/logo.webp"
               alt="Canadian Roofers logo - roofing company in Toronto"
@@ -60,11 +60,11 @@ const HeroSection = () => {
             />
           </div>
 
-          <div className="px-4 pt-2">
+          <div className="px-4 pt-2 sm:text-left text-center">
             <span className="font-mono text-sm tracking-[0.3em] uppercase font-bold font-space-grotesk text-[#ff851a]">END OF WINTER SEASON DEAL</span>
           </div>
 
-          <h1 className="font-black font-playfair-display text-primary-foreground max-w-[40rem] text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-[0.9] tracking-tight">
+          <h1 className="sm:text-left text-center font-black font-playfair-display text-primary-foreground max-w-[40rem] text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-[0.9] tracking-tight">
             Need A <span className="text-stroke-light text-transparent [-webkit-text-stroke:1.5px_hsl(var(--primary-foreground))]">New</span> Roof?
           </h1>
 
@@ -73,10 +73,10 @@ const HeroSection = () => {
             <br />Including Material & Installation
           </p> */}
 
-          <p className="md:text-primary-foreground/60 text-primary-foreground/80 text-lg max-w-lg leading-relaxed">
+          <p className=" sm:text-left text-center md:text-primary-foreground/60 text-primary-foreground/80 text-lg max-w-lg leading-relaxed">
           Protect Your Home With A Quality Roof Installed By Trusted Toronto & GTA Roofers. Free Roof Inspections And New Roofs Starting At Just $4.99 Per Sq. Ft.
           </p>
-          <p className="md:text-primary-foreground/60 text-primary-foreground/80 text-lg max-w-lg leading-relaxed">Schedule Your Free Roof Inspection Now.
+          <p className=" sm:text-left text-center md:text-primary-foreground/60 text-primary-foreground/80 text-lg max-w-lg leading-relaxed">Schedule Your Free Roof Inspection Now.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
