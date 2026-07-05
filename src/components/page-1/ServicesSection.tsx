@@ -21,7 +21,7 @@ const services: Service[] = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-24 bg-gradient-to-b from-surface via-surface to-surface/95" id="services">
+    <section className="py-24 bg-linear-to-b from-surface via-surface to-surface/95" id="services">
       <div className="container ">
         <div className="w-full mx-auto mb-16 grid md:grid-cols-2 grid-cols-1 justify-between items-end gap-10">
           <div className="w-full">
@@ -33,7 +33,7 @@ export default function ServicesSection() {
               </span>
             </h2>
           </div>
-          <div className="flex justify-end">
+          <div className="flex sm:justify-end justify-center">
             <p className="sm:text-left text-center text-muted-foreground text-base max-w-md leading-relaxed md:text-right ">
               At Canadian Roofers we offer the best pricing and roofing options in Toronto and all across the GTA.
             </p>
