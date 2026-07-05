@@ -23,10 +23,10 @@ export default function ServicesSection() {
   return (
     <section className="py-24 bg-gradient-to-b from-surface via-surface to-surface/95" id="services">
       <div className="container ">
-        <div className="max-w-full mx-auto mb-16 grid md:grid-cols-2 justify-between items-end gap-10">
-          <div className="">
-            <h4 className="font-space-grotesk text-accent text-xs tracking-[0.3em] uppercase font-bold mb-3">What We Do</h4>
-            <h2 className="font-black font-playfair-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[0.95]">
+        <div className="w-full mx-auto mb-16 grid md:grid-cols-2 grid-cols-1 justify-between items-end gap-10">
+          <div className="w-full">
+            <h4 className="sm:text-left text-center font-space-grotesk text-accent text-xs tracking-[0.3em] uppercase font-bold mb-3">What We Do</h4>
+            <h2 className="sm:text-left text-center font-black font-playfair-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[0.95]">
               Our Services
               <span className="block text-transparent tracking-tight [-webkit-text-stroke:2px_hsl(var(--foreground))]">
                 That We Offer
@@ -34,7 +34,7 @@ export default function ServicesSection() {
             </h2>
           </div>
           <div className="flex justify-end">
-            <p className="text-muted-foreground text-base max-w-md leading-relaxed md:text-right ">
+            <p className="sm:text-left text-center text-muted-foreground text-base max-w-md leading-relaxed md:text-right ">
               At Canadian Roofers we offer the best pricing and roofing options in Toronto and all across the GTA.
             </p>
           </div>
