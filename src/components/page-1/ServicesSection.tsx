@@ -62,8 +62,8 @@ export default function ServicesSection() {
                       size={28}
                     />
                   </div>
-                  {/* <span className="absolute top-2 right-2 font-space-grotesk text-xs text-muted-foreground/40 group-hover:text-primary-foreground/50 tracking-wider transition-colors">{String(index + 1).padStart(2, "0")}</span>
-                </div> */}
+                  {/* <span className="absolute top-2 right-2 font-space-grotesk text-xs text-muted-foreground/40 group-hover:text-primary-foreground/50 tracking-wider transition-colors">{String(index + 1).padStart(2, "0")}</span> */}
+                </div>
                 <h3 className="font-playfair-display font-bold text-xl sm:text-left text-center text-foreground mb-3 group-hover:text-white transition-colors duration-300">
                   {service.title}
                 </h3>
