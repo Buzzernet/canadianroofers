@@ -43,7 +43,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-t md:from-primary-dark/80 md:via-primary-dark/60 md:to-primary-dark/60 from-primary-dark/95 to-primary-dark/75" />
       </div>
 
-      <div className="container relative z-10 py-10 flex md:flex-row flex-col gap-20 items-end">
+      <div className="container relative z-10 py-10 flex md:flex-row flex-col gap-20 items-center justify-between">
         <div className="max-w-2xl space-y-6 motion-safe:animate-fade-in-up">
           {/* <GoogleStars size="lg" className="[&_span]:text-primary-foreground [&_.text-muted-foreground]:text-primary-foreground/70" />
            */}
@@ -99,7 +99,7 @@ const HeroSection = () => {
             Financing Options Available • Free Gutter Cleaning With Roof Replacement
           </p> */}
         </div>
-        <div className="bg-[#ff851a] max-w-full flex-1 p-8 md:p-10 relative border ">
+        <div className="bg-[#ff851a] max-w-full sm:w-auto w-full flex-1 p-8 md:p-10 relative border">
           <p className="font-space-grotesk text-accent-foreground/80 text-xs tracking-[0.3em] uppercase mb-2">Starting From</p>
           <h2 className="font-playfair-display font-black text-accent-foreground text-7xl md:text-8xl leading-none">$4.<span className="text-5xl md:text-6xl"></span>99</h2>
           <p className="font-space-grotesk text-accent-foreground/90 text-sm tracking-wider uppercase mt-4">Per Square Foot</p>
