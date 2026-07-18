@@ -55,8 +55,8 @@ export default function ServicesSection() {
               {/* Content */}
               <div className="relative z-10">
                 {/* Icon container with enhanced hover effect */}
-                <div className="flex items-start justify-center sm:justify-start mb-6">
-                  <div className="flex items-center justify-center sm:justify-start group-hover:from-accent/20 group-hover:to-accent/10 transition-all duration-500">
+                <div className="flex items-start justify-center  mb-6">
+                  <div className="flex items-center justify-center group-hover:from-accent/20 group-hover:to-accent/10 transition-all duration-500">
                     <service.icon
                       className="text-[#ff851a] group-hover:text-accent transition-all duration-500 group-hover:scale-110"
                       size={28}
@@ -64,7 +64,7 @@ export default function ServicesSection() {
                   </div>
                   {/* <span className="absolute top-2 right-2 font-space-grotesk text-xs text-muted-foreground/40 group-hover:text-primary-foreground/50 tracking-wider transition-colors">{String(index + 1).padStart(2, "0")}</span> */}
                 </div>
-                <h3 className="font-playfair-display font-bold text-xl sm:text-left text-center text-foreground mb-3 group-hover:text-white transition-colors duration-300">
+                <h3 className="font-playfair-display font-bold text-xl text-center text-foreground mb-3 group-hover:text-white transition-colors duration-300">
                   {service.title}
                 </h3>
                 {/* <p className="text-muted-foreground text-sm leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">

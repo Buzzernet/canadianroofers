@@ -43,12 +43,12 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-linear-to-t md:from-primary-dark/80 md:via-primary-dark/60 md:to-primary-dark/60 from-primary-dark/95 to-primary-dark/75" />
       </div>
 
-      <div className="container relative z-10 py-10 flex md:flex-row flex-col gap-20 sm:items-end items-center sm:justify-between justify-center">
+      <div className="container relative z-10 py-10 flex md:flex-row flex-col gap-20 items-center justify-center">
         <div className="max-w-2xl space-y-6 motion-safe:animate-fade-in-up">
           {/* <GoogleStars size="lg" className="[&_span]:text-primary-foreground [&_.text-muted-foreground]:text-primary-foreground/70" />
            */}
           {/* Logo */}
-          <div className="flex sm:justify-start justify-center">
+          <div className="flex justify-center">
             <Image
               src="/images/logo.webp"
               alt="Canadian Roofers logo - roofing company in Toronto"
@@ -60,12 +60,13 @@ const HeroSection = () => {
             />
           </div>
 
-          <div className="px-4 pt-2 sm:text-left text-center">
+          <div className="px-4 pt-2 text-center">
             <span className="font-mono text-sm tracking-[0.3em] uppercase font-bold font-space-grotesk text-[#ff851a]">END OF WINTER SEASON DEAL</span>
           </div>
 
-          <h1 className="sm:text-left text-center font-black font-playfair-display text-primary-foreground max-w-[40rem] text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-[0.9] tracking-tight">
-            Need A <span className="text-stroke-light text-transparent [-webkit-text-stroke:1.5px_hsl(var(--primary-foreground))]">New</span> Roof?
+          <h1 className="text-center font-black font-playfair-display text-primary-foreground max-w-[40rem] text-4xl md:text-5xl lg:text-8xl xl:text-6xl leading-[0.9] tracking-tight">
+            <span className="text-stroke-light text-transparent [-webkit-text-stroke:1.5px_hsl(var(--primary-foreground))]">MOST AFFORDABLE</span> Roofing Company In Toronto & The GTA
+            {/* Need A <span className="text-stroke-light text-transparent [-webkit-text-stroke:1.5px_hsl(var(--primary-foreground))]">New</span> Roof? */}
           </h1>
 
           {/* <p className="text-primary-foreground/90 text-xl md:text-2xl font-bebas-neue font-bold">
@@ -73,22 +74,22 @@ const HeroSection = () => {
             <br />Including Material & Installation
           </p> */}
 
-          <p className=" sm:text-left text-center md:text-primary-foreground/60 text-primary-foreground/80 text-lg max-w-lg leading-relaxed">
+          <p className="text-center md:text-primary-foreground/60 text-primary-foreground/80 sm:text-lg text-md sm:px-16 leading-relaxed">
           Protect Your Home With A Quality Roof Installed By Trusted Toronto & GTA Roofers. Free Roof Inspections And New Roofs Starting At Just $4.99 Per Sq. Ft.
           </p>
-          <p className=" sm:text-left text-center md:text-primary-foreground/60 text-primary-foreground/80 text-lg max-w-lg leading-relaxed">Schedule Your Free Roof Inspection Now.
+          <p className="text-center md:text-primary-foreground/60 text-primary-foreground/80 sm:text-lg text-md leading-relaxed">Schedule Your Free Roof Inspection Now.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 pt-2">
+          <div className="flex flex-col items-center justify-center gap-4 pt-2 w-full">
             <a
               href="#quote"
-              className="shadow-lg group inline-flex items-center justify-center bg-accent hover:bg-accent-hover font-space-grotesk text-white font-bold text-sm tracking-wider uppercase px-8 py-4 transition-all hover:translate-y-[-2px] hover:shadow-xl"
+              className="max-w-90 w-full shadow-lg group inline-flex items-center justify-center bg-accent hover:bg-accent-hover font-space-grotesk text-white font-bold text-sm tracking-wider uppercase px-8 py-4 transition-all hover:translate-y-[-2px] hover:shadow-xl"
             >
               Get A Free Estimate
             </a>
             <a
               href="tel:6472657047"
-              className="inline-flex items-center justify-center gap-2 text-primary-foreground/80 hover:text-primary-foreground border border-primary-foreground/20 hover:border-primary-foreground/40 font-space-grotesk font-bold text-sm tracking-wider px-8 py-4 transition-all"
+              className="max-w-90 w-full inline-flex items-center justify-center gap-2 text-primary-foreground/80 hover:text-primary-foreground border border-primary-foreground/20 hover:border-primary-foreground/40 font-space-grotesk font-bold text-sm tracking-wider px-8 py-4 transition-all"
             >
               <Phone size={20} />
               (647) 265-7047
@@ -99,7 +100,7 @@ const HeroSection = () => {
             Financing Options Available • Free Gutter Cleaning With Roof Replacement
           </p> */}
         </div>
-        <div className="bg-[#ff851a] max-w-full sm:w-auto w-full flex-1 p-8 md:p-10 relative border">
+        {/* <div className="bg-[#ff851a] max-w-full sm:w-auto w-full flex-1 p-8 md:p-10 relative border">
           <p className="font-space-grotesk text-accent-foreground/80 text-xs tracking-[0.3em] uppercase mb-2">Starting From</p>
           <h2 className="font-playfair-display font-black text-accent-foreground text-7xl md:text-8xl leading-none">$4.<span className="text-5xl md:text-6xl"></span>99</h2>
           <p className="font-space-grotesk text-accent-foreground/90 text-sm tracking-wider uppercase mt-4">Per Square Foot</p>
@@ -108,7 +109,7 @@ const HeroSection = () => {
             <p className="text-accent-foreground/60 text-xs mt-3">Free Gutter Cleaning With Roof Replacement</p>
             <p className="text-accent-foreground/60 text-xs mt-3">Financing Options Available</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
