@@ -64,7 +64,7 @@ const HeroSection = () => {
             <span className="font-mono text-sm tracking-[0.3em] uppercase font-bold font-space-grotesk text-[#ff851a]">END OF WINTER SEASON DEAL</span>
           </div>
 
-          <h1 className="text-center font-black font-playfair-display text-primary-foreground max-w-[40rem] text-4xl md:text-5xl lg:text-8xl xl:text-6xl leading-[0.9] tracking-tight">
+          <h1 className="text-center font-black font-playfair-display text-primary-foreground max-w-[40rem] text-4xl md:text-5xl lg:text-8xl xl:text-6xl leading-[1.1] tracking-tight">
             <span className="text-stroke-light text-transparent [-webkit-text-stroke:1.5px_hsl(var(--primary-foreground))]">MOST AFFORDABLE</span> Roofing Company In Toronto & The GTA
             {/* Need A <span className="text-stroke-light text-transparent [-webkit-text-stroke:1.5px_hsl(var(--primary-foreground))]">New</span> Roof? */}
           </h1>
