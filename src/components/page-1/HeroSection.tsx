@@ -61,7 +61,7 @@ const HeroSection = () => {
           </div>
 
           <div className="px-4 pt-2 text-center">
-            <span className="font-mono text-sm tracking-[0.3em] uppercase font-bold font-space-grotesk text-[#ff851a]">END OF WINTER SEASON DEAL</span>
+            <span className="font-mono text-sm tracking-[0.3em] uppercase font-bold font-space-grotesk text-[#ff851a] text-uppercase">Summer Promotions On Now</span>
           </div>
 
           <h1 className="text-center font-black font-playfair-display text-primary-foreground max-w-[40rem] text-4xl md:text-5xl lg:text-8xl xl:text-6xl leading-[1.1] tracking-tight">
