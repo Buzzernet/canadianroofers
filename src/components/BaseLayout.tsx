@@ -110,10 +110,9 @@ type RootLayoutProps = {
     page?: string;
 };
 const BaseLayout = ({ children, page }: RootLayoutProps) => {
-    console.log("BaseLayout render", page);
     return (
         <>
-            <head>
+            <>
                 <Script
                     src="https://www.googletagmanager.com/gtag/js?id=AW-804750091"
                     strategy="lazyOnload"
@@ -147,7 +146,7 @@ const BaseLayout = ({ children, page }: RootLayoutProps) => {
             });
           `}
                 </Script>
-            </head>
+            </>
             <body className={`${fonts} antialiased`}>
                 {page === 'thank-you' && (
                     <>
