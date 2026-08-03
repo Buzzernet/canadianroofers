@@ -45,12 +45,6 @@ collections:
         date_format: "YYYY-MM-DD"
         time_format: false
         hint: "Date displayed on the blog listing and used for sorting (newest first)."
-
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        hint: "Full article content. Supports headings, bold, lists, tables, and links."
-
       - label: "Meta Data"
         name: "meta"
         widget: "object"
@@ -67,3 +61,7 @@ collections:
             widget: "text"
             required: false
             hint: "Overrides the meta description for search engines (150–160 characters ideal)."
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        hint: "Full article content. Supports headings, bold, lists, tables, and links."
