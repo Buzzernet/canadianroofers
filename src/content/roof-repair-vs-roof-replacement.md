@@ -1,8 +1,15 @@
 ---
 title: "Roof Repair vs Roof Replacement: Which Saves More Money?"
-description: "Learn whether roof repair or roof replacement is the better investment. Compare costs, lifespan, benefits, and expert tips from Canadian Roofers."
-slug: "roof-repair-vs-roof-replacement"
-date: "2026-07-22"
+description: Learn whether roof repair or roof replacement is the better
+  investment. Compare costs, lifespan, benefits, and expert tips from Canadian
+  Roofers.
+slug: roof-repair-vs-roof-replacement
+date: 2026-07-22
+meta:
+  seoTitle: "Roof Repair vs Roof Replacement: Which Saves More Money?"
+  seoDescription: Learn whether roof repair or roof replacement is the better
+    investment. Compare costs, lifespan, benefits, and expert tips from Canadian
+    Roofers.
 ---
 
 ## Roof Repair vs Roof Replacement: Which Option Saves More Money?
