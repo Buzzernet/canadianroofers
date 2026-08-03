@@ -13,7 +13,7 @@ A damaged roof is one of the most stressful problems for homeowners. Whether you
 
 The answer depends on several factors, including the age of your roof, the extent of the damage, repair costs, and your long-term plans for the property.
 
-In this guide, we'll compare roof repair vs roof replacement, explain when each option makes financial sense, and help you choose the most cost-effective solution for your home.
+In this guide, we'll compare [roof repair vs roof replacement](https://canadianroofers.ca/), explain when each option makes financial sense, and help you choose the most cost-effective solution for your home.
 
 ## Understanding Roof Repair
 
@@ -240,8 +240,8 @@ It's recommended to schedule a professional inspection at least once a year and 
 
 ## Final Thoughts
 
-Choosing between roof repair and roof replacement isn't just about the immediate cost—it's about long-term value, safety, and peace of mind.
+Choosing between [roof repair and roof replacement](https://canadianroofers.ca/) isn't just about the immediate cost—it's about long-term value, safety, and peace of mind.
 
 If your roof is relatively new and the damage is minor, repairs are often the most economical solution. However, if your roof is aging, has widespread damage, or requires frequent fixes, investing in a full replacement can save you money over time while improving your home's protection and resale value.
 
-A professional roof inspection is the best way to determine the right course of action. An experienced roofing contractor can assess your roof's condition, explain your options, and recommend the most cost-effective solution for your specific needs.
+A professional roof inspection is the best way to determine the right course of action. An [experienced roofing contractor](https://canadianroofers.ca/) can assess your roof's condition, explain your options, and recommend the most cost-effective solution for your specific needs.
