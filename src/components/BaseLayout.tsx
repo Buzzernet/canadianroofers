@@ -113,6 +113,24 @@ const BaseLayout = ({ children, page }: RootLayoutProps) => {
     return (
         <>
             <>
+                {/* Netlify Identity — handles invite/recovery redirects to /admin */}
+                <Script
+                    src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+                    strategy="lazyOnload"
+                />
+                <Script id="netlify-identity-redirect" strategy="lazyOnload">
+                    {`
+                        if (window.netlifyIdentity) {
+                            window.netlifyIdentity.on("init", function(user) {
+                                if (!user) {
+                                    window.netlifyIdentity.on("login", function() {
+                                        document.location.href = "/admin/";
+                                    });
+                                }
+                            });
+                        }
+                    `}
+                </Script>
                 <Script
                     src="https://www.googletagmanager.com/gtag/js?id=AW-804750091"
                     strategy="lazyOnload"

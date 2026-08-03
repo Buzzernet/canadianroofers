@@ -50,11 +50,27 @@ async function getPost(slug: string) {
   return { meta: data as PostMeta, html: html.toString() }
 }
 
+type PostMeta = {
+  title: string
+  description: string
+  slug: string
+  date: string
+  meta?: {
+    seoTitle?: string
+    seoDescription?: string
+  }
+}
+
 export async function generateMetadata(
   { params }: { params: { slug: string } }
 ): Promise<Metadata> {
-  const { meta } = await getPost(params.slug)
-  return { title: meta.title, description: meta.description }
+  const post = await getPost(params.slug)
+  if (!post) return {}
+  const { meta } = post
+  return {
+    title: meta.meta?.seoTitle || meta.title,
+    description: meta.meta?.seoDescription || meta.description,
+  }
 }
 
 export default async function BlogPost({ params }: { params: { slug: string } }) {

@@ -1,0 +1,69 @@
+backend:
+  name: git-gateway
+  branch: master
+
+# Uploaded images go here; Next.js serves /public as root
+media_folder: "public/images/blog"
+public_folder: "/images/blog"
+
+# Show unpublished drafts in the editorial workflow
+publish_mode: editorial_workflow
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "src/content"
+    create: true
+    delete: true
+    # Filename is derived from the slug field so it stays in sync
+    slug: "{{fields.slug}}"
+    preview_path: "/blog/{{fields.slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The main heading shown on the blog post page."
+
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        hint: "Short summary shown in search results and blog listing cards (150–160 characters ideal)."
+
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        hint: "URL-friendly identifier — lowercase letters, numbers, and hyphens only. E.g. roof-repair-vs-replacement"
+        pattern:
+          - '^[a-z0-9]+(?:-[a-z0-9]+)*$'
+          - "Must be lowercase letters, numbers, and hyphens only (no spaces or special characters)."
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        hint: "Date displayed on the blog listing and used for sorting (newest first)."
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        hint: "Full article content. Supports headings, bold, lists, tables, and links."
+
+      - label: "Meta Data"
+        name: "meta"
+        widget: "object"
+        collapsed: true
+        hint: "Optional SEO overrides. Leave blank to fall back to Title and Description above."
+        fields:
+          - label: "SEO Title"
+            name: "seoTitle"
+            widget: "string"
+            required: false
+            hint: "Overrides the page <title> tag for search engines (50–60 characters ideal)."
+          - label: "SEO Description"
+            name: "seoDescription"
+            widget: "text"
+            required: false
+            hint: "Overrides the meta description for search engines (150–160 characters ideal)."
