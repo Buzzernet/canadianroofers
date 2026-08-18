@@ -64,9 +64,8 @@ const HeroSection = () => {
             <span className="font-mono text-sm tracking-[0.3em] uppercase font-bold font-space-grotesk text-[#ff851a] text-uppercase">Summer Promotions On Now</span>
           </div>
 
-          <h1 className="text-center font-black font-playfair-display text-primary-foreground max-w-[40rem] text-4xl md:text-5xl lg:text-8xl xl:text-6xl leading-[1.1] tracking-tight">
-            <span className="text-stroke-light ">MOST AFFORDABLE</span> Roofing Company In Toronto & The GTA
-            {/* Need A <span className="text-stroke-light text-transparent [-webkit-text-stroke:1.5px_hsl(var(--primary-foreground))]">New</span> Roof? */}
+          <h1 className="text-center font-black font-playfair-display text-primary-foreground max-w-[40rem] text-4xl md:text-5xl lg:text-8xl xl:text-6xl leading-[1.1] tracking-tight [text-shadow:0_2px_8px_rgba(0,0,0,0.9),0_6px_32px_rgba(0,0,0,0.75)] [-webkit-text-stroke:1px_rgba(0,0,0,0.25)]">
+            <span className="text-stroke-light [text-shadow:0_2px_12px_rgba(0,0,0,1),0_0_40px_rgba(0,0,0,0.9)]">MOST AFFORDABLE</span> Roofing Company In Toronto & The GTA
           </h1>
 
           {/* <p className="text-primary-foreground/90 text-xl md:text-2xl font-bebas-neue font-bold">
@@ -74,7 +73,7 @@ const HeroSection = () => {
             <br />Including Material & Installation
           </p> */}
 
-          <p className="text-center md:text-primary-foreground/60 text-primary-foreground/80 sm:text-lg text-md sm:px-16 leading-relaxed">
+          <p className="text-center md:text-primary-foreground/80 text-primary-foreground/90 sm:text-lg text-md sm:px-16 leading-relaxed [text-shadow:0_1px_6px_rgba(0,0,0,0.9),0_4px_20px_rgba(0,0,0,0.7)]">
           Protect Your Home With A Quality Roof Installed By Trusted Toronto & GTA Roofers. Free Roof Inspections And New Roofs Starting At Just $4.99 Per Sq. Ft.
           </p>
           <p className="text-center md:text-primary-foreground/60 text-primary-foreground/80 sm:text-lg text-md leading-relaxed">Schedule Your Free Roof Inspection Now.
