@@ -65,7 +65,7 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-center font-black font-playfair-display text-primary-foreground max-w-[40rem] text-4xl md:text-5xl lg:text-8xl xl:text-6xl leading-[1.1] tracking-tight">
-            <span className="text-stroke-light text-transparent [-webkit-text-stroke:1.5px_hsl(var(--primary-foreground))]">MOST AFFORDABLE</span> Roofing Company In Toronto & The GTA
+            <span className="text-stroke-light ">MOST AFFORDABLE</span> Roofing Company In Toronto & The GTA
             {/* Need A <span className="text-stroke-light text-transparent [-webkit-text-stroke:1.5px_hsl(var(--primary-foreground))]">New</span> Roof? */}
           </h1>
 
