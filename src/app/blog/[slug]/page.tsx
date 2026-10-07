@@ -70,6 +70,9 @@ export async function generateMetadata(
   return {
     title: meta.meta?.seoTitle || meta.title,
     description: meta.meta?.seoDescription || meta.description,
+    alternates: {
+      canonical: `https://canadianroofers.ca/blog/${params.slug}`,
+    },
   }
 }
 

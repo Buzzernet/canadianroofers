@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: 'Roofing Blog | Tips, Guides & Advice | Canadian Roofers',
   description:
     'Expert roofing articles, cost guides, repair tips, and homeowner advice from the team at Canadian Roofers. Serving Toronto & the GTA.',
+  alternates: {
+    canonical: 'https://canadianroofers.ca/blog',
+  },
 }
 
 type PostMeta = {

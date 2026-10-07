@@ -15,7 +15,7 @@ const staticRoutes: Array<{
   priority: number;
 }> = [
   { path: "/",                                  changeFrequency: "weekly",  priority: 1.0 },
-  { path: "/metal-roofing-installation-ontario/", changeFrequency: "monthly", priority: 0.6 },
+  { path: "/metal-roofing-installation-ontario",  changeFrequency: "monthly", priority: 0.6 },
   { path: "/blog",                              changeFrequency: "weekly",  priority: 0.8 },
 ];
 
